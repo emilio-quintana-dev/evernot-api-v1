@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get 'users/:id/notes', to: "users#notes"
+  delete 'notes/:id', to: "notes#destroy"
   resources :sessions, only: [:create]
   resources :registrations, only: [:create]
  
